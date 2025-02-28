@@ -14,7 +14,7 @@ document.getElementById("cash-out-btn")
     if(agentNumber.length === 11){
         if(pinNumber === 1234){
             if(amount>0){
-                if(mainBalance> amount){
+                if(mainBalance>= amount){
                     const sum = mainBalance - amount;
                     setInnerTextByIDandValue("main-balance", sum);
 
