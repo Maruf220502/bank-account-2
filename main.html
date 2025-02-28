@@ -8,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-200">
-    <section class="max-w-md min-h-screen mx-auto py-6">
+    <section class="max-w-md min-h-screen mx-auto  py-6">
         <header class="mt-5 pt-5">
             <nav class="">
                 <div class="flex justify-between mx-7">
@@ -55,7 +55,7 @@
                     <p class="mt-2">Pay Bill</p>
                 </div>
 
-                <div class="box border-2 border-black p-4 text-center rounded">
+                <div id="transcation-box" class="box border-2 border-black p-4 text-center rounded">
                     <img class="w-8 mx-auto" src="assets/wallet1.png" alt="">
                     <p class="mt-2">Transactions</p>
                 </div>
@@ -70,7 +70,7 @@
                       <div class="card w-full max-w-sm shrink-0 shadow-2xl">
                         <form class="card-body">
                             <!-- select part -->
-                            <select class="select w-full max-w-xs">
+                            <select id="all-bank" class="select w-full max-w-xs">
                                 <option disabled selected>Select One</option>
                                 <option value="Bkash">Bkash</option>
                                 <option value="Nagad">Nagad</option>
@@ -149,12 +149,21 @@
            </section>
 
         </section>
+
+
+        <section id="tansactions-history">
+          <h1 class="text-3xl font-bold text-center mt-10 ">Transactions History</h1>
+          <div id="transaction-container">
+
+          </div>
+        </section>
       
          
-    </section>>
+    </section>
     <script src="scripts/toggle.js"></script>
     <script src="utilities/utilities.js"></script>
     <script src="scripts/addmoney.js"></script>
     <script src="scripts/cashout.js"></script>
+    <script src="scripts/transaction.js"></script>
 </body>
 </html>
